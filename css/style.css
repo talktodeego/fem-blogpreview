@@ -1,0 +1,193 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --color-yellow: hsl(47, 88%, 63%);
+    --color-white: hsl(0, 0%, 100%);
+    --color-grey: hsl(0, 0%, 50%);
+    --color-black: hsl(0, 0%, 7%);
+}
+
+html,
+body{
+    height: 100%;
+    font-size: 16px;
+    font-family: "Figtree", sans-serif;
+    color: var(--color-black);
+    background-color: var(--color-yellow);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+p{
+    font-size: 1rem;
+}
+
+/*Start Mobile First*/
+@media (min-width: 320px) and (max-width: 425px){
+
+    .card{
+        width: 100%;
+        background-color: var(--color-yellow);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .cardBlog{
+        width: 80%;
+        box-shadow: 10px 10px var(--color-black);
+        background-color: var(--color-white);
+        padding: 1rem;
+        border-radius: 20px;
+        border: 1px solid var(--color-black);
+    }
+
+    .imgBanner img{
+        border-radius: 10px;
+    }
+
+    .textArea{
+        padding: .80rem 0;
+    }
+
+    .headerArea{
+        padding: .50rem 0;
+    }
+
+    .headerArea p{
+        padding: .50rem 0;
+    }
+
+    .btnLearning{
+        border: none;
+        border-radius: 4px;
+        padding: .50rem .80rem;
+        margin-bottom: .30rem;
+        background-color: var(--color-yellow);
+        color: var(--color-black);
+        font-weight: 800;
+    }
+
+    .date{
+        font-size: .85rem;
+        font-weight: 500;
+    }
+
+    .title{
+        font-size: 1.5rem;
+        font-weight: 800;
+    }
+
+    .contentArea{
+        color: var(--color-grey);
+    }
+
+    .authorArea{
+        display: flex;
+        align-items: center;
+    }
+
+    .authorArea img{
+        width: 15%;
+    }
+
+    .authorArea p{
+        font-weight: 800;
+        padding-left: .75rem;
+    }
+
+}
+
+/*End Mobile First*/
+
+.card{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.imgBanner img{
+    border-radius: 10px;
+}
+
+.cardBlog{
+    width: 50%;
+    background-color: var(--color-white);
+    box-shadow: 10px 10px var(--color-black);
+    background-color: var(--color-white);
+    padding: 1rem;
+    border-radius: 20px;
+    border: 1px solid var(--color-black);
+}
+
+.textArea{
+    padding: .80rem 0;
+}
+
+.headerArea{
+    padding: .50rem 0;
+}
+
+.headerArea p{
+    padding: .50rem 0;
+}
+
+.btnLearning{
+    cursor: pointer;
+    border: none;
+    border-radius: 4px;
+    padding: .50rem .80rem;
+    margin-bottom: .30rem;
+    background-color: var(--color-yellow);
+    color: var(--color-black);
+    font-weight: 800;
+}
+.date{
+    font-size: .85rem;
+    font-weight: 500;
+}
+
+.title{
+    font-size: 1.5rem;
+    font-weight: 800;
+}
+
+.title:hover{
+    color: var(--color-yellow);
+    cursor: pointer;
+}
+
+.contentArea{
+    color: var(--color-grey);
+}
+
+.authorArea{
+    display: flex;
+    align-items: center;
+}
+
+.authorArea img{
+    width: 15%;
+    padding-top: .60rem;
+}
+
+.authorArea p{
+    font-weight: 800;
+    padding-left: .75rem;
+}
